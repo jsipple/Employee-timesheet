@@ -27,9 +27,7 @@ $("#submit").click(function(event) {
  startDate = moment(startDate).format("MM/DD/YYYY")
  database.ref().push({
   name: name,
-  monthlyPay: monthlyPay,
   position: position,
-  monthsWorked: monthsWorked,
   total: total,
   startDate: startDate
  })
